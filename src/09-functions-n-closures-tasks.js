@@ -51,7 +51,7 @@ function getPowerFunction(exponent) {
  *   getPolynom(8)     => y = 8
  *   getPolynom()      => null
  */
-function getPolynom() {
+function getPolynom(...args) {
   if (!args.length) return null;
   return (x) => {
     let res = 0;
@@ -186,6 +186,7 @@ function logger(func, logFunc) {
  */
 function partialUsingArguments(fn, ...args1) {
   return (...args2) => fn(...args1, ...args2);
+}
 
 
 /**
@@ -211,6 +212,7 @@ function getIdGeneratorFunction(startFrom) {
     index += 1;
     return index - 1;
   };
+}
 
 
 module.exports = {

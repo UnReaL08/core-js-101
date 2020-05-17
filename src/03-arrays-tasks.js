@@ -49,6 +49,7 @@ function doubleArray(arr) {
   return arr;
 }
 
+
 /**
  * Returns an array of positive numbers from the specified array in original order
  *
@@ -261,6 +262,7 @@ function getSecondItems(arr) {
     return elem;
   });
   return array;
+}
 
 
 /**
@@ -327,6 +329,7 @@ function get3TopItems(arr) {
  */
 function getPositivesCount(arr) {
   return arr.filter((elem) => elem > 0 && typeof elem === 'number').length;
+}
 
 /**
  * Sorts digit names
@@ -419,6 +422,7 @@ function findAllOccurences(arr, item) {
  */
 function toStringList(arr) {
   return arr.join(',');
+}
 
 
 /**
@@ -529,6 +533,7 @@ function distinct(arr) {
     return elem;
   });
   return array;
+}
 
 /**
  * Groups elements of the specified array by key.

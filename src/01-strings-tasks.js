@@ -31,6 +31,9 @@ function getStringLength(value) {
 }
 
 /**
+ * Returns the result of string template and given parameters firstName and lastName.
+ * Please do not use concatenation, use template string :
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings
  *
  * @param {string} firstName
  * @param {string} lastName
@@ -41,7 +44,7 @@ function getStringLength(value) {
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
 function getStringFromTemplate(firstName, lastName) {
-  return `Hello, ${firstName} ${lastName}!`;;
+  return `Hello, ${firstName} ${lastName}!`;
 }
 
 /**
@@ -86,6 +89,7 @@ function getFirstChar(value) {
  */
 function removeLeadingAndTrailingWhitespaces(value) {
   return value.trim();
+}
 
 /**
  * Returns a string that repeated the specified number of times.
@@ -135,6 +139,7 @@ function removeFirstOccurrences(str, value) {
  */
 function unbracketTag(str) {
   return str.slice(1, -1);
+}
 
 
 /**
@@ -253,6 +258,7 @@ function encodeToRot13(str) {
   }
 
   return result;
+}
 
 /**
  * Returns true if the value is string; otherwise false.
@@ -354,7 +360,6 @@ function getCardId(value) {
     return 39 + +decade - 1;
   }
   return 1;
-}
 }
 
 

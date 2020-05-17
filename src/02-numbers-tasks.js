@@ -65,6 +65,7 @@ function getAverage(value1, value2) {
  */
 function getDistanceBetweenPoints(x1, y1, x2, y2) {
   return Math.sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)));
+}
 
 /**
  * Returns a root of linear equation a*x + b = 0 given by coefficients a and b.
